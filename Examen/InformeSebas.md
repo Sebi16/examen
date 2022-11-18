@@ -1,5 +1,18 @@
 # Examen Sebas DAW
 
+## Índice
+
+1. Introducción  
+2. Ejercicio 2
+3. Ejercicio 3
+4. Ejercicio 4
+5. Conclusion
+6. Bibliografía
+
+
+## Introducción
+Vamos a realizar un examen en el cual explicaremos un tutorial por cada ejercicio de como usar servidor apache y servidor ssh. Para ello haremos los siguientes ejercicios que hay a continuacion en grupo.
+
 ## Ejercicio 2
 
 Primero comprobamos que tenemos iniciado el servidor ssh.
@@ -226,7 +239,7 @@ cd /etc
 sudo nano hosts
 
 ```
-Una vez dentro del archivo hosts añadiremos nuestra ip local y el dominio,debera quedar de la siguiente manera.
+Una vez dentro del archivo hosts añadiremos nuestra ip local y el dominio,debera quedar de la siguiente manera.  
 ![](https://github.com/Sebi16/examen/blob/main/Examen/hosts.png?raw=true)
 
 Por acabar solo faltaria comprobar nuestro dominio en la web,para hacerlo escribiremos los siguiente en la web:
@@ -236,3 +249,13 @@ http://daw.ejercicio4.com/sebas.html
 Y deberiemoas ver el siguiente resultado:  
 ![](https://github.com/Sebi16/examen/blob/main/Examen/Resultadofinal.png?raw=true)
 
+
+## Conclusión
+Recomiendo este informe para aprobar la asigantura de Despliegue de Aplicaciones Web.
+Mucha suerte.
+
+## Bibliografia
+[Link 1](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04-es)  
+[Link 2](https://ubuntu.com/tutorials/install-and-configure-apache#3-creating-your-own-website)  
+[Link 3](https://jcastaneda.com/servidores/configurar-ssh-en-ubuntu-server-20-04/?cn-reloaded=1)  
+[Link 4](https://www.hostinger.es/tutoriales/usar-comando-wget/)  
