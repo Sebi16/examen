@@ -160,6 +160,23 @@ http://192.168.0.131
 Debería ver la página web predeterminada de Apache en Ubuntu 20.04:
 ![](https://github.com/Sebi16/examen/blob/main/Examen/ejer4.png?raw=true)
 
+El siguiente paso a realizar es crear nuestro directorio:
+
+```
+sudo mkdir /var/www/html/
+```
+Dentro del directorio /var/www/html crearemos un fichero html,para crearlo usaremos el siguiente comando:
+
+```
+sudo touch sebas.html
+```
+Una vez creado vamos a modificarlos con el siguiente contenido,para modificarlos usaremos el siguiente comando:
+
+```
+sudo nano sebas.html 
+```
+El resultado debe quedar como en este ejemplo.
+![](https://github.com/Sebi16/examen/blob/main/Examen/ejer4.png?raw=true)
 
 Ahora comenzamos el siguiente paso yendo al directorio de archivos de configuración:
 ```
@@ -216,6 +233,6 @@ Por acabar solo faltaria comprobar nuestro dominio en la web,para hacerlo escrib
 ```
 http://daw.ejercicio4.com/sebas.html
 ```
-Y deberiemoas ver el siguiente resultado:
+Y deberiemoas ver el siguiente resultado:  
 ![](https://github.com/Sebi16/examen/blob/main/Examen/Resultadofinal.png?raw=true)
 
