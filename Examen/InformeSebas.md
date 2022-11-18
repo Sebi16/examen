@@ -158,7 +158,7 @@ Cuando tenga la dirección IP de su servidor, introdúzcala en la barra de direc
 http://192.168.0.131
 ```
 Debería ver la página web predeterminada de Apache en Ubuntu 20.04:
-![](https://assets.digitalocean.com/articles/how-to-install-lamp-ubuntu-16/small_apache_default.png)
+![](https://github.com/Sebi16/examen/blob/main/Examen/ejer4.png?raw=true)
 
 
 Ahora comenzamos el siguiente paso yendo al directorio de archivos de configuración:
@@ -210,3 +210,4 @@ sudo nano hosts
 
 ```
 Una vez dentro del archivo hosts añadiremos nuestra ip local y el dominio,debera quedar de la siguiente manera.
+![](https://github.com/Sebi16/examen/blob/main/Examen/ejer4.png?raw=true)
