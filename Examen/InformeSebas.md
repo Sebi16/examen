@@ -6,12 +6,12 @@
 2. Ejercicio 2
 3. Ejercicio 3
 4. Ejercicio 4
-5. Conclusion
+5. Conclusión
 6. Bibliografía
 
 
 ## Introducción
-Vamos a realizar un examen en el cual explicaremos un tutorial por cada ejercicio de como usar servidor apache y servidor ssh. Para ello haremos los siguientes ejercicios que hay a continuacion en grupo.
+Vamos a realizar un examen en el cual explicaremos un tutorial por cada ejercicio de como usar servidor apache y servidor ssh. Para ello haremos los siguientes ejercicios que hay a continuación en grupo.
 
 ## Ejercicio 2
 
@@ -36,11 +36,11 @@ Warning: some journal files were not opened due to insufficient permissions.
 
 ```
 
-Si tenemos iniciado el ssh podremos conectar con el otro cliente para hacerlo usaremos el siguiente comando.
+Si tenemos puesto en marcha el ssh podremos conectar con el otro cliente, para hacerlo utilizaremos el siguiente comando.
 ```
 sudo ssh usuario@192.168.0.168
 ```
-Una vez realizado la conexion y haber introducido la contraseña nos tendria que salir el siguiente resultado si todo ha ido correctamente.
+Una vez realizada la conexión y haber introducido la contraseña nos tendría que salir el siguiente resultado si todo ha ido correctamente.
 ```
 [sudo] contraseña para sebastian: 
 The authenticity of host '192.168.0.168 (192.168.0.168)' can't be established.
@@ -75,17 +75,17 @@ Como vemos ya estamos conectados al usuario:
 ```
 usuario@usuario-OptiPlex-380:~$
 ```
-Ahora crearemos el directorio /var/www/sebastian para hacerlo usaremos el siguiente comando:
+Ahora crearemos el directorio /var/www/sebastian, para hacerlo usaremos el siguiente comando:
 ```
 sudo mkdir var/www/sebastian
 ```
-Una vez creado el directorio crearemos el fichero ejercicio2.txt para hacerlo usaremos el siguiente comando:
+Una vez creado el directorio crearemos el fichero ejercicio2.txt, para hacerlo usaremos el siguiente comando:
 ```
 sudo touch ejercicio2.txt
 ```
-Y con esto ya estaria la tarea realizada.
+Y con esto ya estaría la tarea realizada.
 
-Opcional,Si tenemos un directorio como var/www/sebastian con varios subdirectorios, entonces el siguiente comando cambiará la propiedad de todos los directorios y subdirectorios al usuario usuario.
+Opcional, Sí tenemos un directorio como var/www/sebastian con varios subdirectorios, entonces el siguiente comando cambiará la propiedad de todos los directorios y subdirectorios al usuario usuario.
 ```
 sudo chown -R usuario:usuario /var/www/sebastian/
 ```
@@ -106,7 +106,7 @@ Y si aparte queremos otorgar permisos al propietario del archivo para leer, escr
 chmod 755 ejercicio2.txt
 
 ```
-Esto seria todo.
+Esto sería todo.
 
 ## Ejercicio 3
 Para descargar una imagen usaremos el siguiente comando:
@@ -134,7 +134,7 @@ total 48
 ```
 
 ## Ejercicio 4
-Lo primero de todo comprobamos que tengamos el servidor apache en marcha,para comprobarlo usaremos el siguiente comando:
+Lo primero de todo comprobamos que tengamos el servidor apache en marcha, para comprobarlo usaremos el siguiente comando:
 ```
 sebastian@usuario-OptiPlex-380:~$ sudo systemctl status apache2
 [sudo] contraseña para sebastian: 
@@ -154,9 +154,9 @@ nov 18 15:53:42 usuario-OptiPlex-380 systemd[1]: Starting The Apache HTTP Server
 nov 18 15:53:43 usuario-OptiPlex-380 apachectl[821]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 1>
 nov 18 15:53:43 usuario-OptiPlex-380 systemd[1]: Started The Apache HTTP Server.
 ```
-Como vemos el estado esta en active y eso indica que tenemos el servidor apache en marcha.
+Como vemos el estado está en active y eso indica que tenemos el servidor apache en marcha.
 
-El siguiente paso a realizar es el de saber nuestra ip de la maquina,para saberlo usaremos el siguiente comando:
+El siguiente paso a realizar es el de saber nuestra ip de la máquina, para saberlo usaremos el siguiente comando:
 ```
 hostname -I
 ```
@@ -178,12 +178,12 @@ El siguiente paso a realizar es crear nuestro directorio:
 ```
 sudo mkdir /var/www/html/
 ```
-Dentro del directorio /var/www/html crearemos un fichero html,para crearlo usaremos el siguiente comando:
+Dentro del directorio /var/www/html crearemos un fichero html, para crearlo usaremos el siguiente comando:
 
 ```
 sudo touch sebas.html
 ```
-Una vez creado vamos a modificarlos con el siguiente contenido,para modificarlos usaremos el siguiente comando:
+Una vez creado vamos a modificarlos con el siguiente contenido, para modificarlos usaremos el siguiente comando:
 
 ```
 sudo nano sebas.html 
@@ -231,7 +231,7 @@ Para cargar el nuevo sitio, reiniciamos Apache escribiendo:
 ```
 service apache2 reload
 ```
-Despues de hacer todo estos pasos vamos a modificar el fichero hosts, para ello debemos entrar en el siguiente directorio:
+Después de hacer todos estos pasos vamos a modificar el fichero hosts, para ello debemos entrar en el siguiente directorio:
 ```
 cd /etc
 ```
@@ -239,22 +239,22 @@ cd /etc
 sudo nano hosts
 
 ```
-Una vez dentro del archivo hosts añadiremos nuestra ip local y el dominio,debera quedar de la siguiente manera.  
+Una vez dentro del archivo hosts añadiremos nuestra ip local y el dominio, deberá quedar de la siguiente manera.  
 ![](https://github.com/Sebi16/examen/blob/main/Examen/hosts.png?raw=true)
 
-Por acabar solo faltaria comprobar nuestro dominio en la web,para hacerlo escribiremos los siguiente en la web:
+Por acabar solo faltaría comprobar nuestro dominio en la web, para hacerlo escribiremos lo siguiente en la web:
 ```
 http://daw.ejercicio4.com/sebas.html
 ```
-Y deberiemoas ver el siguiente resultado:  
+Y deberíamos ver el siguiente resultado:  
 ![](https://github.com/Sebi16/examen/blob/main/Examen/Resultadofinal.png?raw=true)
 
 
 ## Conclusión
-Recomiendo este informe para aprobar la asigantura de Despliegue de Aplicaciones Web.
+Recomiendo este informe para aprobar la asignatura de Despliegue de Aplicaciones Web.
 Mucha suerte.
 
-## Bibliografia
+## Bibliografía
 [Link 1](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04-es)  
 [Link 2](https://ubuntu.com/tutorials/install-and-configure-apache#3-creating-your-own-website)  
 [Link 3](https://jcastaneda.com/servidores/configurar-ssh-en-ubuntu-server-20-04/?cn-reloaded=1)  
