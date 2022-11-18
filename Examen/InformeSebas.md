@@ -160,6 +160,53 @@ http://192.168.0.131
 Debería ver la página web predeterminada de Apache en Ubuntu 20.04:
 ![](https://assets.digitalocean.com/articles/how-to-install-lamp-ubuntu-16/small_apache_default.png)
 
-Para pasar una pagina web lo primero deberemos configurar el archivo de configuración de VirtualHost.
 
+Ahora comenzamos el siguiente paso yendo al directorio de archivos de configuración:
+```
+cd /etc/apache2/sites-available/
+```
+Dado que Apache vino con un archivo VirtualHost predeterminado, usémoslo como base. (gci.conf se usa aquí para que coincida con nuestro nombre de subdominio):
+```
+sudo cp 000-default.conf gci.conf
+```
+Editamos el archivo:
+```
+sudo nano gci.conf
+```
+Una vez dentro del archivo escribimos lo siguiente:
+```
+ServerAdmin webmaster@localhost
 
+```
+```
+DocumentRoot /var/www/html/
+```
+```
+ServerName daw.ejercicio4.com
+```
+
+Después de configurar nuestro sitio web, debemos activar el archivo de configuración de hosts virtuales para habilitarlo.
+Para habilitarlo usaremos lo siguiente comando:
+```
+sudo a2ensite gci.conf
+```
+Deberías ver el siguiente resultado:
+```
+Enabling site gci.
+To activate the new configuration, you need to run:
+  service apache2 reload
+root@ubuntu-server:/etc/apache2/sites-available#
+```
+Para cargar el nuevo sitio, reiniciamos Apache escribiendo:
+```
+service apache2 reload
+```
+Despues de hacer todo estos pasos vamos a modificar el fichero hosts, para ello debemos entrar en el siguiente directorio:
+```
+cd /etc
+```
+```
+sudo nano hosts
+
+```
+Una vez dentro del archivo hosts añadiremos nuestra ip local y el dominio,debera quedar de la siguiente manera.
