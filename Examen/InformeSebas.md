@@ -188,7 +188,7 @@ Una vez creado vamos a modificarlos con el siguiente contenido,para modificarlos
 ```
 sudo nano sebas.html 
 ```
-El resultado debe quedar como en este ejemplo.
+El resultado debe quedar como en este ejemplo.  
 ![](https://github.com/Sebi16/examen/blob/main/Examen/html.png?raw=true)
 
 Ahora comenzamos el siguiente paso yendo al directorio de archivos de configuración:
