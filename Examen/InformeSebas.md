@@ -210,4 +210,12 @@ sudo nano hosts
 
 ```
 Una vez dentro del archivo hosts añadiremos nuestra ip local y el dominio,debera quedar de la siguiente manera.
-![](https://github.com/Sebi16/examen/blob/main/Examen/ejer4.png?raw=true)
+![](https://github.com/Sebi16/examen/blob/main/Examen/hosts.png?raw=true)
+
+Por acabar solo faltaria comprobar nuestro dominio en la web,para hacerlo escribiremos los siguiente en la web:
+```
+http://daw.ejercicio4.com/sebas.html
+```
+Y deberiemoas ver el siguiente resultado:
+![](https://github.com/Sebi16/examen/blob/main/Examen/hosts.png?raw=true)
+
