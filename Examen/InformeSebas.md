@@ -217,5 +217,5 @@ Por acabar solo faltaria comprobar nuestro dominio en la web,para hacerlo escrib
 http://daw.ejercicio4.com/sebas.html
 ```
 Y deberiemoas ver el siguiente resultado:
-![](https://github.com/Sebi16/examen/blob/main/Examen/hosts.png?raw=true)
+![](https://github.com/Sebi16/examen/blob/main/Examen/Resultadofinal.png?raw=true)
 
